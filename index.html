@@ -1,0 +1,108 @@
+<html>
+<title> Chapter 8</title>
+    <meta name="view point" content="width=device-width, initial-scale=0.1"><link rel="stylesheet" href="style.css">
+    <body>
+        <div>
+            <hr size=8 color="black">
+    <h2 style="text-align: justify;">Chapter 8. Understanding Views
+</h2>
+            <ul><p style="text-align: justify;">The NetView management console graphically displays systems and networking information provided by the NetView host. This information is displayed as Resource Object Data Manager (RODM) based views and is available only if a conversation is set up between the topology server and the NetView host.</p></ul>
+            <hr>
+    <h2 style="text-align: justify;">RODM-Based Views
+            </h2>
+            <ul><p style="text-align: justify;">RODM-based views are predefined in RODM or are dynamically built based on definitions in RODM. The Graphic Monitor Facility host subsystem (GMFHS) must be available to display RODM-based views and can include the following views:</p></ul>
+        <ul><li>Network views</li>
+            <li>Exception views</li>
+            <li>Configuration views</li>
+            <li>More detail views</li>
+            <li>Locate failing resource views</li>
+            <p style="text-align: justify;">RODM-based views contain resources which are defined by the SNA topology manager, MultiSystem Manager, user applications, loader files, and so on.</p>
+            </ul>
+        <h2 style="text-align: justify;">&nbsp;&nbsp;&nbsp;Network Views
+</h2>
+        <ul><p style="text-align: justify;">Network views and the resources displayed in them are defined in RODM. Figure 4 shows a network view.</p></ul>
+        <p style="text-align: center;"><img src="images/img.jpeg" alt="Description of the image"></p><br>
+        <h2 style="text-align: justify;">&nbsp;&nbsp;&nbsp;Exception Views
+</h2>
+        <ul><p style="text-align: justify;">An exception view is a view that typically shows only resources that are not functioning properly, as defined by the exception criteria you defined in RODM. Figure 5 on page 70 shows an exception view.</p></ul>
+        <p style="text-align: center;"><img src="images/img2.jpeg" alt="Description of the image"></p><br>
+        <h2 style="text-align: justify;">&nbsp;&nbsp;&nbsp;Configuration Views
+            </h2>
+        <ul><p style="text-align: justify;">You can request these types of configuration views: parents, children, peers, logical, physical, logical and physical, and backbone. All relationships must have been previously defined in RODM.</p>
+            <h2 style="text-align: justify;">Configuration Parents View</h2>
+            <p style="text-align: justify;">Figure 6 displays the configuration of a resource (not the entire connectivity) to its owning node.</p>
+            </ul>
+        <p style="text-align: center;"><img src="images/img3.jpeg" alt="Description of the image"></p><br>
+        
+        <ul><h2 style="text-align: justify;">Configuration Children View</h2>
+            <p style="text-align: justify;">Figure 7 on page 71 shows the selected resource and all of its children.</p></ul>
+            <p style="text-align: center;"><img src="images/img4.jpeg" alt="Description of the image"></p><br>
+            <ul><h2 style="text-align: justify;">Configuration Peers View</h2>
+                <p style="text-align: justify;">Figure 8 shows a view containing resources in the network that are arranged in a configuration based on a peer relationship between resources.</p>  
+            </ul>
+            <p style="text-align: center;"><img src="images/img5.jpeg" alt="Description of the image"></p><br>
+            <ul><h2 style="text-align: justify;">Configuration Logical View</h2>
+                <p style="text-align: justify;">Figure 9 on page 72 shows a view containing resources in the network that are arranged in a configuration based on a logical relationship between resources.</p>  
+            </ul>
+            <p style="text-align: center;"><img src="images/img6.jpeg" alt="Description of the image"></p><br>
+            <ul><h2 style="text-align: justify;">Configuration Physical View</h2>
+                <p style="text-align: justify;">Figure 10 shows a view containing resources in the network that are arranged in a configuration based on a physical relationship between resources.</p>  
+            </ul>
+            <p style="text-align: center;"><img src="images/img7.jpeg" alt="Description of the image"></p><br>
+            <ul><h2 style="text-align: justify;">Configuration Logical and Physical</h2>
+                <p style="text-align: justify;">Figure 11 on page 73 shows a view containing resources in the network that are arranged in a configuration based on a logical and physical relationship between resources.</p>  
+            </ul>
+            <p style="text-align: center;"><img src="images/img8.jpeg" alt="Description of the image"></p><br>
+            <ul><h2 style="text-align: justify;">Configuration Backbone View</h2>
+                <p style="text-align: justify;">Figure 12 shows a view containing resources in the network that are arranged in a configuration based on a subarea backbone relationship.</p>  
+            </ul>
+            <p style="text-align: center;"><img src="images/img9.jpeg" alt="Description of the image"></p><br>
+        <h2 style="text-align: justify;">More Detail Views</h2>
+            <ul><p style="text-align: justify;">When you request more detail about a selected resource, the view that is displayed shows lower-level resources that are related to the selected resource. You can use the More Detail function to navigate from high-level views to lower-level views.
+Figure 13 on page 74 shows the contents of a resource, or more details about the resource.</p>  
+            </ul>
+            <p style="text-align: center;"><img src="images/img10.jpeg" alt="Description of the image"></p><br>
+            <h2 style="text-align: justify;">Locate Failing Resources</h2>
+            <ul><p style="text-align: justify;">Figure 14 shows a view which was created by selecting Locate Failing Resources on the context menu of an aggregate resource. This view displays all child real resources currently in an exception status.</p>  
+            </ul>
+            <p style="text-align: center;"><img src="images/img11.jpeg" alt="Description of the image"></p><br>
+            <hr>
+            <h2 style="text-align: justify;">Customized Views</h2>
+            <ul><p style="text-align: justify;">A customized view is a view that has been opened, changed, and saved using the Save View Customization function. You can use this function to save changes to views that are created dynamically in response to certain requests and to predefined RODM-based network views. If you are signed on as administrator, this function is available for the following types of views:</p> 
+                <li>Network views (predefined)</li>
+                <li>Configuration views (both predefined and dynamically-built)</li>
+                <li>More detail views (both predefined and dynamically-built)</li>
+                <li>Locate failing resource views (dynamically-built)</li>
+                <p style="text-align: justify;">If sign on as administrator, and dynamic views are customized, the Customized Dynamic Views node is displayed in the business tree.</p>
+                <p style="text-align: justify;">Double-clicking a customized dynamic view in the business tree opens a snapshot of the view, but this snapshot is not an active view with real status and the latest topology changes. You can use it to see how dynamic views have been customized and to change the customization.</p>
+                <p style="text-align: justify;">Note: Customized network views are shown in the business tree under Network Views.</p></ul>
+            <hr>
+                <h2 style="text-align: justify;">Views Containing Resources for Which You Are Not Authorized</h2>
+            <ul><p style="text-align: justify;">If you have defined span of control, some views can contain resources that you are not authorized to display because of your span authorization. When this occurs, the view is affected in one of the following ways, depending on your NetView customization:</p>
+                <li>The unauthorized resources are not visible.</li>
+                <li>The unauthorized resources are displayed as null nodes or null links, or both.</li>
+                <p style="text-align: justify;">For more information about span of control, refer to the <i>IBM Tivoli NetView for z/OS Resource Object Data Manager and GMFHS Programmer's Guide</i>.</p>
+            </ul>
+            <hr>
+            <h2 style="text-align: justify;">Views Containing Scheduled Resources</h2>
+            <ul><p style="text-align: justify;">If you have defined NMCSTATUS policy definitions, a view can contain resources that are suspended from aggregation or are no longer receiving system status updates at the NetView management console. For more information about NMCSTATUS policy definitions, see the <i>IBM Tivoli NetView for z/OS Administration Reference.</i></p>
+                <p style="text-align: justify;">A resource that is suspended from aggregation because of a NMCSTATUS policy definition has a textual note attached to the suspend flag indicating why the resource was suspended. The note is displayed when either a Resource Properties or List Suspended Resources request is made.</p>
+                <p style="text-align: justify;">A resource that is no longer receiving system status updates at the NetView management console topology console has a scheduled system status. The resource continues to receive system status updates in RODM but they are not sent to the NetView management console topology console while the resource is scheduled.
+As with other system statuses, you can customize the color of the scheduled system status on the Console Properties window.</p>
+            </ul>
+            <hr>
+            <h2 style="text-align: justify;">Displaying Views in a Web Browser</h2>
+            <ul><p style="text-align: justify;">You can configure the NetView management console topology console to function as a web server. This enables the console to capture Topographic or Details NetView management console views and convert them into HTML and GIF files, which you can view in any web browser.</p>
+                <p style="text-align: justify;">Note: You can only display views that are open on the console.</p>
+                <p style="text-align: justify;">If you want information about... &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Refer to...                   </p>
+                <hr>
+                <p style="text-align: justify;">Displaying views in a web browser&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“Configuring a Web Browser to Display Views” on page 18.</p>
+            
+            
+            </ul>
+            
+            
+            
+        </div>
+    </body>
+</html>
